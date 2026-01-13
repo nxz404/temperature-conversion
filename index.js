@@ -16,9 +16,10 @@ function convert() {
     else if (!toFahrenheit.checked && !toCelsius.checked){
         result.textContent = "Você prescisa selecionar uma opção!";
     }
-    else if(temp == NaN || temp = ""){
+    else if(temp == NaN && toFahrenheit.checked || toCelsius.checked || temp = "" && toFahrenheit.checked || toCelsius.checked){
         result.textContent = "Você deve colocar um número";
     }
 }
+
 
 
