@@ -16,10 +16,19 @@ function convert() {
     else if (!toFahrenheit.checked && !toCelsius.checked){
         result.textContent = "Você prescisa selecionar uma opção!";
     }
-    else if(temp == NaN && toFahrenheit.checked || toCelsius.checked || temp = "" && toFahrenheit.checked || toCelsius.checked){
+    else if(temp == NaN && toFahrenheit.checked || toCelsius.checked || temp == "" && toFahrenheit.checked || toCelsius.checked){
         result.textContent = "Você deve colocar um número";
     }
+    else if(temp == ""){
+        if(toFahrenheit.checked){
+            result.textContent = "0°C é igual a 32°F"
+        }
+        if(toCelsius.checked){
+            result.textContent = "0°F é igual a -17.77777777777778°C"
+        }
+    }
 }
+
 
 
 
