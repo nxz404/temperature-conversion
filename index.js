@@ -13,7 +13,11 @@ function convert() {
         let c = (temp - 32) / 1.8;
         result.textContent = `${temp}°F é igual a ${c}°C`;
     }
-    if (!toFahrenheit.checked && !toCelsius.checked){
+    else if (!toFahrenheit.checked && !toCelsius.checked){
         result.textContent = "Você prescisa selecionar uma opção!";
     }
+    else if(temp == NaN){
+        result.textContent = "Você deve colocar um número";
+    }
 }
+
