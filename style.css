@@ -1,5 +1,5 @@
 *{
-    font-family: Poppins;
+    font-family: Poppins, sans-serif, Montserrat;
     background-color: hsl(180, 75%, 95%);
     margin: 0;
     padding: 0;
@@ -139,5 +139,6 @@ div{
     #result{
         margin-bottom: 40px;
     }
+
 
 }
