@@ -131,6 +131,7 @@ div{
         padding: 20px;
     }
     #container{
+        transition: all 0.3s ease;
         width: 90vw;
         height: auto;
         padding-bottom: 20px;
@@ -140,6 +141,44 @@ div{
         margin-bottom: 40px;
     }
 
+}
+@media (min-width: 1280px){
+    form{
+        height: 60vh;
+        width: 60vh;
+        padding: 20px;
+    }
+    #container{
+        transition: all 0.3s ease;
+        height: 66vh;
+        width: 60vh;
+        padding-bottom: 20px;
+    }
+    #result{
+        margin-bottom: 40px;
+    }
 
 }
+@media (min-width: 768px) and (max-width: 1279px){
+    form{
+        height: 70vh;
+        width: 60vh;
+        padding: 20px;
+    }
+    #container{
+        transition: all 0.3s ease;
+        height: 77vh;
+        width: 60vh;
+        padding-bottom: 20px;
+    }
+    h1{
+        font-size: 20px;
+    }
+    #result{
+        margin-bottom: 40px;
+    }
+
+}
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap');
+
 
